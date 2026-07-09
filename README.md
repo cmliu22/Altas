@@ -149,7 +149,7 @@ See [Milestones](docs/00-product/01-Milestones.md) for the complete learning and
 - [Project Charter](docs/00-product/00-Project%20Charter.md) — Defines the mission, scope, and guiding principles.
 - [Milestones](docs/00-product/01-Milestones.md) — Defines the learning-driven roadmap and technology progression.
 - [Minimum Viable Product](docs/00-product/02-MVP.md) — Defines the boundaries and success criteria for the first working release.
-- [Documentation Standards](docs/99-meta/Documentation%20Standards.md) — Defines how official project knowledge is created and maintained.
+- [Documentation Standards](docs/99-meta/00-Documentation%20Standards.md) — Defines how official project knowledge is created and maintained.
 
 ## Planned MVP
 
