@@ -130,6 +130,6 @@ Later milestones will extend the MVP with knowledge systems and RAG, conversatio
 
 **Related Documents:**
 
-- [[00-Project Charter]] (`docs/00-product/00-Project Charter.md`) — Project mission and vision.
-- [[01-Milestones]] (`docs/00-product/01-Milestones.md`) — Learning roadmap from which this MVP is derived.
-- [[00-Tech Stack]] (`docs/01-architecture/00-Tech Stack.md`) — Technologies selected to implement the MVP.
+- [[00-Project Charter]] ([00-Project Charter.md](<00-Project Charter.md>)) — Project mission and vision.
+- [[01-Milestones]] ([01-Milestones.md](01-Milestones.md)) — Learning roadmap from which this MVP is derived.
+- [[00-Tech Stack]] ([../01-architecture/00-Tech Stack.md](<../01-architecture/00-Tech Stack.md>)) — Technologies selected to implement the MVP.

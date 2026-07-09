@@ -190,7 +190,7 @@ The technologies listed above represent the current architectural direction of P
 
 **Related Documents:**
 
-- [[00-Project Charter]] (`docs/00-product/00-Project Charter.md`) — Defines the mission and architecture-minded values behind technology choices.
-- [[01-Milestones]] (`docs/00-product/01-Milestones.md`) — Defines when technologies should be introduced along the learning roadmap.
-- [[02-MVP]] (`docs/00-product/02-MVP.md`) — Defines the first release constraints that shape the initial stack.
-- [[00-Documentation Standards]] (`docs/99-meta/00-Documentation Standards.md`) — Defines how this architecture document should be maintained.
+- [[00-Project Charter]] ([../00-product/00-Project Charter.md](<../00-product/00-Project Charter.md>)) — Defines the mission and architecture-minded values behind technology choices.
+- [[01-Milestones]] ([../00-product/01-Milestones.md](../00-product/01-Milestones.md)) — Defines when technologies should be introduced along the learning roadmap.
+- [[02-MVP]] ([../00-product/02-MVP.md](../00-product/02-MVP.md)) — Defines the first release constraints that shape the initial stack.
+- [[00-Documentation Standards]] ([../99-meta/00-Documentation Standards.md](<../99-meta/00-Documentation Standards.md>)) — Defines how this architecture document should be maintained.

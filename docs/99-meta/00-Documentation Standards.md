@@ -78,10 +78,12 @@ Use the following format at the end of every official document:
 
 **Related Documents:**
 
-- [[Document Name]] (`path/to/document.md`) — Short description of the relationship.
+- [[Document Name]] ([relative/path/to/document.md](relative/path/to/document.md)) — Short description of the relationship.
 ```
 
-Related documents should include both the Obsidian link and repository path, and should describe the relationship between documents rather than merely list filenames. When useful, documents should point backward to the foundations on which they depend and forward to the documents they enable.
+Project Altas intentionally keeps both Obsidian wiki links and Markdown repository links because the documentation is designed to work equally well in Obsidian, GitHub, and any standard Markdown viewer. Wiki links provide excellent local knowledge navigation, while Markdown links provide portable repository navigation. Together they maximize portability without sacrificing usability.
+
+Related documents should include both link forms and describe the relationship between documents rather than merely list filenames. Markdown links should display the repository path and use a path relative to the document containing the link. When useful, documents should point backward to the foundations on which they depend and forward to the documents they enable.
 
 ## 7. Document Lifecycle
 
@@ -238,7 +240,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 - [ ] The document avoids unnecessary duplication.
 - [ ] The intended audience is appropriate and identified.
 - [ ] A complete `Document Information` section is included.
-- [ ] Related Documents include both Obsidian links and repository paths and describe meaningful relationships.
+- [ ] Related Documents include both Obsidian wiki links and relative Markdown repository links and describe meaningful relationships.
 - [ ] Markdown lists are preceded by a blank line.
 - [ ] The version and status are correct.
 - [ ] The writing is concise and professional.
@@ -259,7 +261,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 
 **Related Documents:**
 
-- [[00-Project Charter]] (`docs/00-product/00-Project Charter.md`) — Defines the mission and values that guide the documentation culture.
-- [[01-Milestones]] (`docs/00-product/01-Milestones.md`) — Defines the learning roadmap that documentation should support.
-- [[02-MVP]] (`docs/00-product/02-MVP.md`) — Defines the first release whose documentation should follow these standards.
-- [[00-Tech Stack]] (`docs/01-architecture/00-Tech Stack.md`) — Applies these standards to the project's technology direction.
+- [[00-Project Charter]] ([../00-product/00-Project Charter.md](<../00-product/00-Project Charter.md>)) — Defines the mission and values that guide the documentation culture.
+- [[01-Milestones]] ([../00-product/01-Milestones.md](../00-product/01-Milestones.md)) — Defines the learning roadmap that documentation should support.
+- [[02-MVP]] ([../00-product/02-MVP.md](../00-product/02-MVP.md)) — Defines the first release whose documentation should follow these standards.
+- [[00-Tech Stack]] ([../01-architecture/00-Tech Stack.md](<../01-architecture/00-Tech Stack.md>)) — Applies these standards to the project's technology direction.
