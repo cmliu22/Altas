@@ -129,6 +129,7 @@ Later milestones will extend the MVP with knowledge systems and RAG, conversatio
 **Last Updated:** 2026-07-09
 
 **Related Documents:**
+
 - [[00-Project Charter]] — Project mission and vision.
 - [[01-Milestones]] — Learning roadmap from which this MVP is derived.
 - [[00-Tech Stack]] — Technologies selected to implement the MVP.

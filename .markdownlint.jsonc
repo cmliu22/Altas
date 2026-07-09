@@ -1,0 +1,17 @@
+{
+    // Project Altas Markdown style
+    // The repository defines its documentation standards.
+    // Markdownlint should support those standards rather than override them.
+
+    // Disable maximum line length.
+    "MD013": false,
+
+    // Allow documents that don't begin with an H1.
+    "MD041": false,
+
+    // Allow compact Markdown tables.
+    "MD060": false,
+
+    // Allow repeated headings in document templates.
+    "MD024": false
+}

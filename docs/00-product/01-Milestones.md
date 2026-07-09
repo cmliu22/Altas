@@ -489,6 +489,7 @@ The MVP should not attempt to include RAG, agents, MCP, or production deployment
 **Last Updated:** 2026-07-09
 
 **Related Documents:**
+
 - [[00-Project Charter]] — Foundational mission, vision, and guiding principles.
 - [[02-MVP]] — First release derived from Milestone 1 — Foundation.
 - [[00-Tech Stack]] — Technology progression aligned with the milestones.

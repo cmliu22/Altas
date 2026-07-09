@@ -255,6 +255,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 **Last Updated:** 2026-07-09
 
 **Related Documents:**
+
 - [[00-Project Charter]] — Defines the mission and values that guide the documentation culture.
 - [[01-Milestones]] — Defines the learning roadmap that documentation should support.
 - [[02-MVP]] — Defines the first release whose documentation should follow these standards.
