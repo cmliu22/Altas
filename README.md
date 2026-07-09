@@ -64,8 +64,8 @@ The learning journey is intentionally public from the first commit onward. Reade
 ## Current Status
 
 - [x] Foundation documentation complete
-- [ ] Tech stack
-- [ ] Architecture Decision Records
+- [x] Tech stack
+- [x] Architecture Decision Records
 - [ ] MVP implementation
 - [ ] Knowledge systems
 - [ ] Memory
@@ -148,7 +148,7 @@ See [Milestones](docs/00-product/01-Milestones.md) for the complete learning and
 
 - [Project Charter](docs/00-product/00-Project%20Charter.md) — Defines the mission, scope, and guiding principles.
 - [Milestones](docs/00-product/01-Milestones.md) — Defines the learning-driven roadmap and technology progression.
-- [Minimum Viable Product](docs/00-product/02-MVP.md) — Defines the boundaries and success criteria for the first working release.
+- [Minimum Viable Product](02-Minimum%20Viable%20Product%20(MVP).md) — Defines the boundaries and success criteria for the first working release.
 - [Documentation Standards](docs/99-meta/00-Documentation%20Standards.md) — Defines how official project knowledge is created and maintained.
 
 ## Planned MVP
@@ -182,7 +182,7 @@ Implementation directories will be added when the MVP begins.
 
 Implementation has not yet begun. The project is currently in the planning and architecture phase.
 
-Setup instructions will be added once the MVP implementation starts. Until then, begin with the [Project Charter](docs/00-product/00-Project%20Charter.md), then review the [Milestones](docs/00-product/01-Milestones.md) and [MVP](docs/00-product/02-MVP.md).
+Setup instructions will be added once the MVP implementation starts. Until then, begin with the [Project Charter](docs/00-product/00-Project%20Charter.md), then review the [Milestones](docs/00-product/01-Milestones.md) and [MVP](02-Minimum%20Viable%20Product%20(MVP).md).
 
 ## License
 

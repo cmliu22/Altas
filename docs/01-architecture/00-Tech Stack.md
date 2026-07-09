@@ -191,5 +191,5 @@ The technologies listed above represent the current architectural direction of P
 
 - [[00-Project Charter]] — Defines the mission and architecture-minded values behind technology choices.
 - [[01-Milestones]] — Defines when technologies should be introduced along the learning roadmap.
-- [[02-MVP]] — Defines the first release constraints that shape the initial stack.
+- [[02-Minimum Viable Product (MVP)]] — Defines the first release constraints that shape the initial stack.
 - [[00-Documentation Standards]] — Defines how this architecture document should be maintained.

@@ -59,9 +59,11 @@ The main content should be organized according to the document's single responsi
 
 ### Document Titles
 
-Every document should present only one visible title. Regular documents begin with a single H1. ADR documents do not repeat their title as an H1; they begin directly with `## Status`, and the filename serves as the document title.
+Every document should present only one visible title. `README.md` keeps its H1 because it is the public repository entry point and should be optimized for GitHub presentation.
 
-This convention avoids duplicate titles on GitHub, keeps ADRs concise, and improves readability.
+Official documents under `docs/` should generally begin directly with their first content section, such as `## 1. Purpose` or `## Status`. The filename serves as the visible document title in GitHub and Obsidian file navigation. ADRs remain a special case only in structure because they begin with `## Status`.
+
+This convention avoids duplicate titles on GitHub, keeps documents concise, makes `docs/` files consistent, and keeps `README.md` optimized for GitHub presentation.
 
 ## 6. Document Information Standard
 
@@ -269,5 +271,5 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 
 - [[00-Project Charter]] — Defines the mission and values that guide the documentation culture.
 - [[01-Milestones]] — Defines the learning roadmap that documentation should support.
-- [[02-MVP]] — Defines the first release whose documentation should follow these standards.
+- [[02-Minimum Viable Product (MVP)]] — Defines the first release whose documentation should follow these standards.
 - [[00-Tech Stack]] — Applies these standards to the project's technology direction.

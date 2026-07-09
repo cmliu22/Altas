@@ -32,7 +32,7 @@ LangChain abstractions will remain conceptually separate from Altas-owned applic
 ## Related Documents
 
 - [[00-Tech Stack]] — Defines the technology direction and planned stack.
-- [[02-MVP]] — Defines the first release constraints.
+- [[02-Minimum Viable Product (MVP)]] — Defines the first release constraints.
 - [[01-Milestones]] — Defines when technologies are introduced.
 
 ## Document Information
@@ -52,5 +52,5 @@ LangChain abstractions will remain conceptually separate from Altas-owned applic
 **Related Documents:**
 
 - [[00-Tech Stack]] — Defines the technology direction and planned stack.
-- [[02-MVP]] — Defines the first release constraints.
+- [[02-Minimum Viable Product (MVP)]] — Defines the first release constraints.
 - [[01-Milestones]] — Defines when technologies are introduced.
