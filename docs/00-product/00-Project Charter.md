@@ -132,3 +132,22 @@ The initial scope should stay focused on establishing a strong foundation:
 Altas is intended to remain technology-agnostic. As AI frameworks evolve, the platform should evolve with them while preserving sound engineering principles, modular architecture, and a focus on reusable capabilities rather than framework-specific implementations.
 
 Ultimately, Altas aims to become a durable AI engineering platform where learning, experimentation, and production-minded software development reinforce one another. The platform should evolve alongside advances in AI while preserving the architectural clarity, engineering discipline, and reusable foundations established from the beginning.
+
+## Document Information
+
+**Status:** Approved
+
+**Version:** 1.0
+
+**Owner:** Project Altas
+
+**Audience:** Everyone
+
+**Created:** 2026-07-09
+
+**Last Updated:** 2026-07-09
+
+**Related Documents:**
+- [[01-Milestones]] — Forward roadmap derived from the project mission and vision.
+- [[02-MVP]] — First usable release shaped by the project charter.
+- [[00-Tech Stack]] — Technology direction supporting the project architecture.
