@@ -77,10 +77,11 @@ Use the following format at the end of every official document:
 **Last Updated:** YYYY-MM-DD
 
 **Related Documents:**
-- [[Document Name]] — Short description of the relationship.
+
+- [[Document Name]] (`path/to/document.md`) — Short description of the relationship.
 ```
 
-Related documents should describe the relationship between documents rather than merely list filenames. When useful, documents should point backward to the foundations on which they depend and forward to the documents they enable.
+Related documents should include both the Obsidian link and repository path, and should describe the relationship between documents rather than merely list filenames. When useful, documents should point backward to the foundations on which they depend and forward to the documents they enable.
 
 ## 7. Document Lifecycle
 
@@ -124,6 +125,7 @@ Examples:
 - Separate concepts from implementation.
 - Use tables for comparison.
 - Use diagrams when they improve understanding.
+- Add a blank line before Markdown lists to satisfy MD032 and improve readability.
 - Keep each document focused on one responsibility.
 
 ## 11. Cross-Document Relationships
@@ -236,7 +238,8 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 - [ ] The document avoids unnecessary duplication.
 - [ ] The intended audience is appropriate and identified.
 - [ ] A complete `Document Information` section is included.
-- [ ] Related Documents describe meaningful relationships.
+- [ ] Related Documents include both Obsidian links and repository paths and describe meaningful relationships.
+- [ ] Markdown lists are preceded by a blank line.
 - [ ] The version and status are correct.
 - [ ] The writing is concise and professional.
 
@@ -256,6 +259,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 
 **Related Documents:**
 
-- [[00-Project Charter]] — Defines the mission and values that guide the documentation culture.
-- [[01-Milestones]] — Defines the learning roadmap that documentation should support.
-- [[02-MVP]] — Defines the first release whose documentation should follow these standards.
+- [[00-Project Charter]] (`docs/00-product/00-Project Charter.md`) — Defines the mission and values that guide the documentation culture.
+- [[01-Milestones]] (`docs/00-product/01-Milestones.md`) — Defines the learning roadmap that documentation should support.
+- [[02-MVP]] (`docs/00-product/02-MVP.md`) — Defines the first release whose documentation should follow these standards.
+- [[00-Tech Stack]] (`docs/01-architecture/00-Tech Stack.md`) — Applies these standards to the project's technology direction.
