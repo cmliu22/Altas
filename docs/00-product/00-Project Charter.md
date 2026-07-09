@@ -149,6 +149,6 @@ Ultimately, Altas aims to become a durable AI engineering platform where learnin
 
 **Related Documents:**
 
-- [[01-Milestones]] ([01-Milestones.md](01-Milestones.md)) — Forward roadmap derived from the project mission and vision.
-- [[02-MVP]] ([02-MVP.md](02-MVP.md)) — First usable release shaped by the project charter.
-- [[00-Tech Stack]] ([../01-architecture/00-Tech Stack.md](<../01-architecture/00-Tech Stack.md>)) — Technology direction supporting the project architecture.
+- [[01-Milestones]] — Forward roadmap derived from the project mission and vision.
+- [[02-MVP]] — First usable release shaped by the project charter.
+- [[00-Tech Stack]] — Technology direction supporting the project architecture.
