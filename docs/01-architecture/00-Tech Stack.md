@@ -1,4 +1,3 @@
-# Tech Stack
 
 ## 1. Purpose
 

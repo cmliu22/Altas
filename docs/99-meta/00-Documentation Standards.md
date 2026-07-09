@@ -57,6 +57,12 @@ Every official document should follow this general structure:
 
 The main content should be organized according to the document's single responsibility. Every official document should end with a `Document Information` section that identifies its lifecycle state, version, ownership, audience, dates, and relationships.
 
+### Document Titles
+
+Every document should present only one visible title. Regular documents begin with a single H1. ADR documents do not repeat their title as an H1; they begin directly with `## Status`, and the filename serves as the document title.
+
+This convention avoids duplicate titles on GitHub, keeps ADRs concise, and improves readability.
+
 ## 6. Document Information Standard
 
 Use the following format at the end of every official document:
