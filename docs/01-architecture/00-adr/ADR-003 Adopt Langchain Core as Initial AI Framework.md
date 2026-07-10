@@ -1,3 +1,5 @@
+# ADR-003: Adopt LangChain Core as the Initial AI Framework
+
 ## Status
 
 Accepted

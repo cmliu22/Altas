@@ -1,3 +1,5 @@
+# Minimum Viable Product
+
 ## 1. Purpose
 
 This document defines the first usable release of Project Altas. The MVP establishes a practical foundation for learning how an LLM application is structured and operated without introducing the concepts reserved for later milestones.

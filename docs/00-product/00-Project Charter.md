@@ -1,3 +1,4 @@
+# Project Charter
 
 ## 1. Project Name
 

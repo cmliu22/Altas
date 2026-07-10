@@ -1,3 +1,5 @@
+# ADR-004: Use a src-Based Package Layout
+
 ## Status
 
 Accepted

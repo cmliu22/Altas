@@ -1,3 +1,4 @@
+# Documentation Standards
 
 ## 1. Purpose
 
@@ -59,11 +60,25 @@ The main content should be organized according to the document's single responsi
 
 ### Document Titles
 
-Every document should present only one visible title. `README.md` keeps its H1 because it is the public repository entry point and should be optimized for GitHub presentation.
+Every official document should contain exactly one top-level H1. The H1 is the canonical visible title on GitHub, while the filename remains readable and descriptive repository metadata.
 
-Official documents under `docs/` should generally begin directly with their first content section, such as `## 1. Purpose` or `## Status`. The filename serves as the visible document title in GitHub and Obsidian file navigation. ADRs remain a special case only in structure because they begin with `## Status`.
+The H1 should use a human-readable title rather than the raw filename. `README.md` keeps `# Project Altas`.
 
-This convention avoids duplicate titles on GitHub, keeps documents concise, makes `docs/` files consistent, and keeps `README.md` optimized for GitHub presentation.
+ADRs should use this format:
+
+`# ADR-XXX: Decision Title`
+
+Examples:
+
+- `# Project Charter`
+- `# Milestones`
+- `# Minimum Viable Product`
+- `# Tech Stack`
+- `# Documentation Standards`
+- `# Development Environment Standard`
+- `# ADR-005: Use Layered Application Architecture`
+
+GitHub is the public presentation layer for the repository. A canonical H1 provides clearer rendering and navigation. One H1 does not count as duplication because the filename is repository metadata, while the H1 is document content. Documents must still contain only one H1.
 
 ## 6. Document Information Standard
 
@@ -307,6 +322,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 ## 17. Documentation Checklist
 
 - [ ] The document has a clear purpose.
+- [ ] The document contains exactly one canonical H1 title.
 - [ ] The document is stored in the correct folder.
 - [ ] Terminology is consistent with related documents.
 - [ ] The document avoids unnecessary duplication.
@@ -321,7 +337,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 
 **Status:** Approved
 
-**Version:** 1.1
+**Version:** 1.2
 
 **Owner:** Project Altas
 
