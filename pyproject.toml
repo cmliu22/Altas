@@ -7,7 +7,9 @@ authors = [
     { name = "Congmin Liu", email = "liucongmin@sec-dt.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pydantic-settings>=2.14.2",
+]
 
 [project.scripts]
 altas = "altas:main"
