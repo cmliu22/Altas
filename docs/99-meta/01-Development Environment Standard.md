@@ -241,4 +241,4 @@ Future changes should preserve the goals of reproducibility, simplicity, maintai
 
 - [[00-Documentation Standards]] - Defines the structure and maintenance rules for official Project Altas documentation.
 - [[00-Tech Stack]] - Defines the project technology direction that the development environment supports.
-- [[ADR-002 Use uv For Python Environment and Dependency Management]] - Records the decision to use `uv` for Python environment and dependency management.
+- [[ADR-002-use-uv-for-python-environment-and-dependency-management]] - Records the decision to use `uv` for Python environment and dependency management.

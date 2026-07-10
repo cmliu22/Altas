@@ -73,15 +73,21 @@ Application logic must not depend directly on a vendor SDK. Altas should define 
 
 ```text
 Application
-    ↓
+    ->
+AI Runtime Harness
+    ->
 Altas LLM Provider Interface
-    ↓
+    ->
 Provider Adapter
-    ↓
+    ->
 Chinese OpenAI-compatible provider
 ```
 
-This boundary allows the initial provider to be replaced or supplemented without requiring changes throughout the application.
+The AI Runtime Harness is an Altas architectural boundary between application use cases and provider communication. It is responsible for AI execution lifecycle concerns such as orchestration, context preparation, memory coordination, tool execution coordination, tracing, evaluation hooks, and safety or validation boundaries.
+
+LangChain and LangGraph may provide implementation capabilities for parts of this harness, but they do not define the architecture. The harness should remain provider-neutral and framework-aware rather than framework-owned.
+
+This boundary allows the initial provider to be replaced or supplemented without requiring changes throughout the application or its AI execution lifecycle.
 
 ## 6. Planned Technology Progression
 
@@ -89,18 +95,19 @@ Technologies outside Milestone 1 remain planned until their corresponding learni
 
 | Technology | Introduced In | Purpose | Current Status |
 |---|---|---|---|
-| LangChain RAG | Milestone 2 — Knowledge Systems | Compose document ingestion, retrieval, and grounded response workflows | Planned |
-| Embeddings | Milestone 2 — Knowledge Systems | Represent content for semantic comparison and retrieval | Planned |
-| Vector store | Milestone 2 — Knowledge Systems | Index and retrieve document chunks by semantic similarity | Planned |
-| Conversation memory | Milestone 3 — Memory | Manage bounded conversational state and model context | Planned |
-| LangChain Tools | Milestone 4 — Tools and Skills | Define structured capabilities that models can request | Planned |
-| Skill registry | Milestone 4 — Tools and Skills | Register, discover, validate, and control reusable skills | Planned |
-| LangGraph | Milestone 5 — Agents | Model stateful workflows and bounded agent execution | Planned |
-| MCP SDK / MCP integration | Milestone 6 — MCP Integration | Connect tools, resources, context, and external systems through a standard protocol | Planned |
-| LangSmith | Milestone 7 — Evaluation | Trace, evaluate, and compare AI application behavior | Planned |
-| FastAPI | Milestone 8 — Production Readiness | Expose platform capabilities through an API boundary | Planned |
-| Docker | Milestone 8 — Production Readiness | Package reproducible application runtime environments | Planned |
-| GitHub Actions | Milestone 8 — Production Readiness | Automate testing, quality checks, builds, and delivery workflows | Planned |
+| AI Runtime Harness | Milestone 2 - AI Runtime Harness | Orchestrate AI execution lifecycle concerns between applications and providers | Planned |
+| LangChain RAG | Milestone 3 - Knowledge Systems | Compose document ingestion, retrieval, and grounded response workflows | Planned |
+| Embeddings | Milestone 3 - Knowledge Systems | Represent content for semantic comparison and retrieval | Planned |
+| Vector store | Milestone 3 - Knowledge Systems | Index and retrieve document chunks by semantic similarity | Planned |
+| Conversation memory | Milestone 4 - Memory | Manage bounded conversational state and model context | Planned |
+| LangChain Tools | Milestone 5 - Tools and Skills | Define structured capabilities that models can request | Planned |
+| Skill registry | Milestone 5 - Tools and Skills | Register, discover, validate, and control reusable skills | Planned |
+| LangGraph | Milestone 6 - Agents | Model stateful workflows and bounded agent execution | Planned |
+| MCP SDK / MCP integration | Milestone 7 - MCP Integration | Connect tools, resources, context, and external systems through a standard protocol | Planned |
+| LangSmith | Milestone 8 - Evaluation | Trace, evaluate, and compare AI application behavior | Planned |
+| FastAPI | Milestone 9 - Production Readiness | Expose platform capabilities through an API boundary | Planned |
+| Docker | Milestone 9 - Production Readiness | Package reproducible application runtime environments | Planned |
+| GitHub Actions | Milestone 9 - Production Readiness | Automate testing, quality checks, builds, and delivery workflows | Planned |
 | PostgreSQL | Later / if needed | Provide durable relational storage when application requirements justify it | Planned |
 | Redis | Later / if needed | Provide caching or transient coordination when application requirements justify it | Planned |
 
@@ -129,6 +136,7 @@ The initial stack should support the following conceptual layers:
 
 - **Interface Layer:** Accepts user input and presents system output. The MVP uses a CLI; later interfaces may include APIs or applications.
 - **Application Layer:** Coordinates use cases and request flows without depending on provider-specific implementation details.
+- **AI Runtime Harness:** Manages AI execution lifecycle concerns such as orchestration, context preparation, memory coordination, tool coordination, tracing, evaluation hooks, and safety boundaries.
 - **Platform Core:** Defines Altas-owned contracts, prompt management, shared models, and foundational behavior.
 - **Provider Adapters:** Translate platform contracts into calls to external model providers and normalize their responses.
 - **Infrastructure and Tooling:** Supports configuration, logging, testing, dependency management, documentation, and development workflows.
@@ -142,6 +150,7 @@ The following decisions are likely candidates for future Architecture Decision R
 - Choose Python as the primary language
 - Use `uv` for Python environment and dependency management
 - Use LangChain Core as the initial AI framework
+- Introduce an AI Runtime Harness architecture
 - Use Typer for the CLI interface
 - Use Pydantic Settings for configuration
 - Define an Altas-owned LLM provider abstraction
@@ -159,9 +168,10 @@ This section provides a concise architectural summary of why each core technolog
 | Python | Mature AI ecosystem, excellent library support, and strong educational value | C#, Go | ADR-001 |
 | uv | Fast, modern, unified Python package and environment management | pip + venv, Poetry, Conda | ADR-002 |
 | LangChain Core | Modular abstractions for prompts, models, runnables, and retrieval without introducing unnecessary complexity | LlamaIndex, direct SDK usage | ADR-003 |
-| Typer | Modern, typed CLI development with minimal boilerplate | argparse, Click | ADR-004 |
-| Pydantic Settings | Type-safe configuration management and validation | python-dotenv, custom configuration | ADR-005 |
-| Altas Provider Interface | Vendor-independent architecture that isolates provider-specific implementation details | Direct provider SDK integration | ADR-006 |
+| AI Runtime Harness | Altas-owned boundary for AI execution lifecycle management as capabilities grow | Direct provider invocation, application-owned orchestration | ADR-006 |
+| Typer | Modern, typed CLI development with minimal boilerplate | argparse, Click | TBD |
+| Pydantic Settings | Type-safe configuration management and validation | python-dotenv, custom configuration | TBD |
+| Altas Provider Interface | Vendor-independent architecture that isolates provider-specific implementation details | Direct provider SDK integration | TBD |
 | Chinese OpenAI-Compatible Provider | Practical access, OpenAI-compatible APIs, and reduced access friction during development | OpenAI, Anthropic, local-only inference | ADR-007 |
 
 The technologies listed above represent the current architectural direction of Project Altas. Individual decisions will eventually be documented in dedicated Architecture Decision Records (ADRs), where alternatives, trade-offs, and long-term implications can be discussed in greater detail.
@@ -178,7 +188,7 @@ The technologies listed above represent the current architectural direction of P
 
 **Status:** Draft
 
-**Version:** 0.1
+**Version:** 0.2
 
 **Owner:** Project Altas
 
@@ -186,7 +196,7 @@ The technologies listed above represent the current architectural direction of P
 
 **Created:** 2026-07-09
 
-**Last Updated:** 2026-07-09
+**Last Updated:** 2026-07-10
 
 **Related Documents:**
 
@@ -194,3 +204,4 @@ The technologies listed above represent the current architectural direction of P
 - [[01-Milestones]] — Defines when technologies should be introduced along the learning roadmap.
 - [[02-Minimum Viable Product (MVP)]] — Defines the first release constraints that shape the initial stack.
 - [[00-Documentation Standards]] — Defines how this architecture document should be maintained.
+- [[ADR-006-introduce-ai-runtime-harness-architecture|ADR-006: Introduce AI Runtime Harness Architecture]] - Records the runtime harness architecture boundary.

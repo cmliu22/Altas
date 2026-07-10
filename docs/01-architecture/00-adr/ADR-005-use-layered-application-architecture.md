@@ -77,7 +77,8 @@ Higher layers may depend on lower-level abstractions, but core project logic sho
 - [[00-Tech Stack]] - Defines the technology direction and planned stack.
 - [[02-Minimum Viable Product (MVP)]] - Defines the first release constraints.
 - [[01-Milestones]] - Defines when technologies are introduced.
-- [[ADR-001 Choose Python as the Primary Language]] - Records the decision to use Python as the primary language.
-- [[ADR-002 Use uv For Python Environment and Dependency Management]] - Records the decision to use `uv`.
-- [[ADR-003 Adopt Langchain Core as Initial AI Framework]] - Records the decision to adopt LangChain Core as the initial AI framework.
-- [[ADR-004 Use a src-based Package Layout]] - Records the decision to use a `src/`-based package layout.
+- [[ADR-001-choose-python-as-the-primary-language]] - Records the decision to use Python as the primary language.
+- [[ADR-002-use-uv-for-python-environment-and-dependency-management]] - Records the decision to use `uv`.
+- [[ADR-003-adopt-langchain-core-as-initial-ai-framework]] - Records the decision to adopt LangChain Core as the initial AI framework.
+- [[ADR-004-use-a-src-based-package-layout]] - Records the decision to use a `src/`-based package layout.
+- [[ADR-006-introduce-ai-runtime-harness-architecture|ADR-006: Introduce AI Runtime Harness Architecture]] - Refines the layered architecture with an AI execution boundary.

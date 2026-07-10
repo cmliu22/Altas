@@ -25,6 +25,7 @@ Instead, Altas incrementally explores:
 
 - LLM applications
 - LangChain and LangGraph
+- AI runtime orchestration
 - Retrieval-augmented generation
 - Memory
 - Tools
@@ -67,6 +68,8 @@ The learning journey is intentionally public from the first commit onward. Reade
 - [x] Tech stack
 - [x] Architecture Decision Records
 - [ ] MVP implementation
+- [ ] Provider abstraction
+- [ ] AI Runtime Harness
 - [ ] Knowledge systems
 - [ ] Memory
 - [ ] Tools
@@ -87,6 +90,7 @@ The technologies below describe the current direction. They are planned unless t
 | uv | Reproducible Python environments and dependency management |
 | LangChain | LLM application components, prompts, retrieval, and tools |
 | LangGraph | Stateful workflows and bounded agent execution |
+| AI Runtime Harness | Altas-owned boundary for AI execution lifecycle orchestration |
 | FastAPI | API boundary for later service-based capabilities |
 | MCP | Standardized integration with tools, resources, and external systems |
 | Docker | Reproducible application packaging and runtime environments |
@@ -105,57 +109,57 @@ The technologies below describe the current direction. They are planned unless t
 ## Roadmap
 
 1. Foundation
-2. Knowledge Systems / RAG
-3. Memory
-4. Tools and Skills
-5. Agents
-6. MCP Integration
-7. Evaluation
-8. Production Readiness
-9. Advanced Applications
+2. Provider Abstraction
+3. AI Runtime Harness
+4. Knowledge Systems / RAG
+5. Memory
+6. Tools and Skills
+7. Agents
+8. MCP Integration
+9. Evaluation
+10. Production Readiness
+11. Advanced Applications
 
 ```text
 Foundation
-    │
-    ▼
+    ->
+Provider Abstraction
+    ->
+AI Runtime Harness
+    ->
 Knowledge Systems / RAG
-    │
-    ▼
+    ->
 Memory
-    │
-    ▼
+    ->
 Tools and Skills
-    │
-    ▼
+    ->
 Agents
-    │
-    ▼
+    ->
 MCP Integration
-    │
-    ▼
+    ->
 Evaluation
-    │
-    ▼
+    ->
 Production Readiness
-    │
-    ▼
+    ->
 Advanced Applications
 ```
 
 See [Milestones](docs/00-product/01-Milestones.md) for the complete learning and product evolution path.
 
+The future architecture introduces an AI Runtime Harness between application use cases and AI providers. The harness is an Altas boundary for execution orchestration, context preparation, tracing, safety boundaries, and evaluation hooks; frameworks such as LangChain or LangGraph may help implement it without owning the architecture.
+
 ## Documentation
 
 - [Project Charter](docs/00-product/00-Project%20Charter.md) — Defines the mission, scope, and guiding principles.
 - [Milestones](docs/00-product/01-Milestones.md) — Defines the learning-driven roadmap and technology progression.
-- [Minimum Viable Product](02-Minimum%20Viable%20Product%20(MVP).md) — Defines the boundaries and success criteria for the first working release.
+- [Minimum Viable Product](docs/00-product/02-Minimum%20Viable%20Product%20%28MVP%29.md) — Defines the boundaries and success criteria for the first working release.
 - [Documentation Standards](docs/99-meta/00-Documentation%20Standards.md) — Defines how official project knowledge is created and maintained.
 
 ## Planned MVP
 
 The first working release is intentionally limited to a local-first CLI-based LLM chat application. It will establish project structure, configuration, logging, LLM provider abstraction, prompt management, and a simple user interaction loop.
 
-RAG, agents, MCP, and production deployment are deliberately excluded from the MVP. They belong to later milestones, where each can be learned and introduced with the attention it deserves.
+The AI Runtime Harness, RAG, agents, MCP, and production deployment are deliberately excluded from the MVP. They belong to later milestones, where each can be learned and introduced with the attention it deserves.
 
 ## Project Structure
 
@@ -182,7 +186,7 @@ Implementation directories will be added when the MVP begins.
 
 Implementation has not yet begun. The project is currently in the planning and architecture phase.
 
-Setup instructions will be added once the MVP implementation starts. Until then, begin with the [Project Charter](docs/00-product/00-Project%20Charter.md), then review the [Milestones](docs/00-product/01-Milestones.md) and [MVP](02-Minimum%20Viable%20Product%20(MVP).md).
+Setup instructions will be added once the MVP implementation starts. Until then, begin with the [Project Charter](docs/00-product/00-Project%20Charter.md), then review the [Milestones](docs/00-product/01-Milestones.md) and [MVP](docs/00-product/02-Minimum%20Viable%20Product%20%28MVP%29.md).
 
 ## License
 

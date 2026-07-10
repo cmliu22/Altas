@@ -68,4 +68,4 @@ This ADR defines only the package boundary. It intentionally does not define the
 - [[00-Tech Stack]] - Defines the technology direction and planned stack.
 - [[02-Minimum Viable Product (MVP)]] - Defines the first release constraints.
 - [[01-Milestones]] - Defines when technologies are introduced.
-- [[ADR-002 Use uv For Python Environment and Dependency Management]] - Records the decision to use `uv`.
+- [[ADR-002-use-uv-for-python-environment-and-dependency-management]] - Records the decision to use `uv`.
