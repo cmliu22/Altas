@@ -31,12 +31,6 @@ Altas-owned interfaces and modular boundaries should prevent this choice from cr
 - Python packaging and environment management require deliberate tooling and conventions.
 - Other languages may still be introduced later when a specific platform responsibility justifies them.
 
-## Related Documents
-
-- [[00-Tech Stack]] — Defines the technology direction and planned stack.
-- [[02-Minimum Viable Product (MVP)]] — Defines the first release constraints.
-- [[01-Milestones]] — Defines when technologies are introduced.
-
 ## Document Information
 
 **Status:** Approved
@@ -49,7 +43,7 @@ Altas-owned interfaces and modular boundaries should prevent this choice from cr
 
 **Created:** 2026-07-09
 
-**Last Updated:** 2026-07-09
+**Last Updated:** 2026-07-10
 
 **Related Documents:**
 

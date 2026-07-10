@@ -82,6 +82,8 @@ GitHub is the public presentation layer for the repository. A canonical H1 provi
 
 ## 6. Document Information Standard
 
+Every official document has one `Document Information` section. Related Documents belong inside `Document Information` so lifecycle metadata and cross-document relationships have one canonical location.
+
 Use the following format at the end of every official document:
 
 ```text
@@ -230,6 +232,12 @@ ADRs should record stable architectural choices.
 
 Future architectural changes should normally be documented with new ADRs rather than rewriting historical decisions.
 
+### Related Documents
+
+ADRs must not contain a separate standalone `## Related Documents` section. Each ADR should contain exactly one Related Documents list, located inside `Document Information`.
+
+This avoids duplicated metadata and keeps cross-document relationships in one canonical location.
+
 ### Immutability
 
 Approved ADRs should not be rewritten to reflect newer decisions. When an architectural decision changes, create a new ADR that supersedes or amends the earlier one while preserving the historical record.
@@ -328,6 +336,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 - [ ] The document avoids unnecessary duplication.
 - [ ] The intended audience is appropriate and identified.
 - [ ] A complete `Document Information` section is included.
+- [ ] The document contains only one Related Documents list, located inside `Document Information`.
 - [ ] Related Documents use the link format appropriate to the document's primary environment and describe meaningful relationships.
 - [ ] Markdown lists are preceded by a blank line.
 - [ ] The version and status are correct.
@@ -337,7 +346,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 
 **Status:** Approved
 
-**Version:** 1.2
+**Version:** 1.3
 
 **Owner:** Project Altas
 

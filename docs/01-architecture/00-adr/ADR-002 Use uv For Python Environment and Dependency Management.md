@@ -31,12 +31,6 @@ Project setup and contributor instructions should treat `uv` as the standard loc
 - Compatibility with standard Python workflows and external tooling must be considered as the project evolves.
 - The decision should be revisited if future platform requirements expose material limitations.
 
-## Related Documents
-
-- [[00-Tech Stack]] — Defines the technology direction and planned stack.
-- [[02-Minimum Viable Product (MVP)]] — Defines the first release constraints.
-- [[01-Milestones]] — Defines when technologies are introduced.
-
 ## Document Information
 
 **Status:** Approved
@@ -49,7 +43,7 @@ Project setup and contributor instructions should treat `uv` as the standard loc
 
 **Created:** 2026-07-09
 
-**Last Updated:** 2026-07-09
+**Last Updated:** 2026-07-10
 
 **Related Documents:**
 

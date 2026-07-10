@@ -49,13 +49,6 @@ This ADR defines only the package boundary. It intentionally does not define the
 - The `src/` layout introduces a slightly deeper directory structure than a flat project, which may feel less familiar to new Python developers.
 - Contributors must understand that importable code belongs under `src/altas/`.
 
-## Related Documents
-
-- [[00-Tech Stack]] - Defines the technology direction and planned stack.
-- [[02-Minimum Viable Product (MVP)]] - Defines the first release constraints.
-- [[01-Milestones]] - Defines when technologies are introduced.
-- [[ADR-002 Use uv For Python Environment and Dependency Management]] - Records the decision to use `uv`.
-
 ## Document Information
 
 **Status:** Approved

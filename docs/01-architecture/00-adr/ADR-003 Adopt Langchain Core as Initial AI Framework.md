@@ -31,12 +31,6 @@ LangChain abstractions will remain conceptually separate from Altas-owned applic
 - Altas-owned boundaries must remain distinct so framework choices can be changed where practical.
 - Advanced LangChain capabilities remain deferred until their corresponding milestones.
 
-## Related Documents
-
-- [[00-Tech Stack]] — Defines the technology direction and planned stack.
-- [[02-Minimum Viable Product (MVP)]] — Defines the first release constraints.
-- [[01-Milestones]] — Defines when technologies are introduced.
-
 ## Document Information
 
 **Status:** Approved
@@ -49,7 +43,7 @@ LangChain abstractions will remain conceptually separate from Altas-owned applic
 
 **Created:** 2026-07-09
 
-**Last Updated:** 2026-07-09
+**Last Updated:** 2026-07-10
 
 **Related Documents:**
 
