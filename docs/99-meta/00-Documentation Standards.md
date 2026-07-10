@@ -161,7 +161,71 @@ Do not create an ADR for:
 
 An ADR should capture the context, considered options, decision, and consequences once the architectural choice is stable enough to preserve.
 
-## 13. When to Update Documentation
+## 13. Architecture Decision Records (ADRs)
+
+### Purpose
+
+ADRs record long-lived architectural decisions rather than implementation details.
+
+### Naming
+
+ADR file names must use:
+
+```text
+ADR-XXX-short-kebab-case-description.md
+```
+
+Examples:
+
+- `ADR-001-choose-python-as-primary-language.md`
+- `ADR-004-use-src-based-package-layout.md`
+
+### ADR Titles
+
+ADR titles should begin with an action verb.
+
+Preferred style:
+
+- Choose...
+- Use...
+- Adopt...
+- Introduce...
+- Separate...
+- Define...
+- Standardize...
+
+Avoid noun-only titles whenever possible.
+
+Good examples:
+
+- ADR-001: Choose Python as the Primary Language
+- ADR-002: Use uv for Environment and Dependency Management
+- ADR-003: Adopt LangChain Core as the Initial AI Framework
+- ADR-004: Use a src-Based Package Layout
+
+### Scope
+
+Each ADR should define exactly one architectural decision.
+
+Do not combine multiple unrelated decisions.
+
+### Evolution
+
+ADRs should record stable architectural choices.
+
+Future architectural changes should normally be documented with new ADRs rather than rewriting historical decisions.
+
+### Immutability
+
+Approved ADRs should not be rewritten to reflect newer decisions. When an architectural decision changes, create a new ADR that supersedes or amends the earlier one while preserving the historical record.
+
+### Internal Package Design
+
+When documenting package layouts, ADRs should define package boundaries only.
+
+Detailed internal module organization should evolve with implementation rather than being designed prematurely.
+
+## 14. When to Update Documentation
 
 Update official documentation when:
 
@@ -179,7 +243,7 @@ Do not update official documentation for:
 
 Working observations should remain in `notes/` until they become stable knowledge that belongs in an official document.
 
-## 14. Documentation Maintenance Workflow
+## 15. Documentation Maintenance Workflow
 
 ### Documentation Maintenance Philosophy
 
@@ -229,7 +293,7 @@ AI assistants such as Codex may be used to:
 
 > Documentation maintenance is part of engineering. Every approved document should strengthen the overall documentation graph rather than exist in isolation.
 
-## 15. AI Collaboration Guidelines
+## 16. AI Collaboration Guidelines
 
 - AI can draft, edit, and review documentation.
 - Humans approve final decisions.
@@ -240,7 +304,7 @@ AI assistants such as Codex may be used to:
 
 AI-assisted changes should follow the same standards for accuracy, scope, review, and maintainability as human-authored changes.
 
-## 16. Documentation Checklist
+## 17. Documentation Checklist
 
 - [ ] The document has a clear purpose.
 - [ ] The document is stored in the correct folder.
@@ -257,7 +321,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 
 **Status:** Approved
 
-**Version:** 1.0
+**Version:** 1.1
 
 **Owner:** Project Altas
 
@@ -265,7 +329,7 @@ AI-assisted changes should follow the same standards for accuracy, scope, review
 
 **Created:** 2026-07-09
 
-**Last Updated:** 2026-07-09
+**Last Updated:** 2026-07-10
 
 **Related Documents:**
 

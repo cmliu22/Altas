@@ -1,0 +1,17 @@
+[project]
+name = "altas"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Congmin Liu", email = "liucongmin@sec-dt.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+altas = "altas:main"
+
+[build-system]
+requires = ["uv_build>=0.11.15,<0.12.0"]
+build-backend = "uv_build"
