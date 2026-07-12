@@ -18,13 +18,8 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Obsidian workspace/cache
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache/
-.trash/
-
-# Obsidian workspace state
+# Obsidian local state
 .obsidian/workspace.json
 .obsidian/graph.json
 .obsidian/cache/
+.obsidian/plugins/*/data.json
