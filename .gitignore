@@ -23,3 +23,8 @@ Thumbs.db
 .obsidian/workspace-mobile.json
 .obsidian/cache/
 .trash/
+
+# Obsidian workspace state
+.obsidian/workspace.json
+.obsidian/graph.json
+.obsidian/cache/
